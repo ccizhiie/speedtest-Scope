@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <style>
+        body {
+            margin: 0; /* hapus margin  */
+            padding: 0; /* hapus padding  */
+            overflow: hidden; /* menutup overflow pada body */
+            user-select: none; /* Mencegah pemilihan teks  */
+        }
+        .box {
+            position: absolute; /* tetap posisi absolut untuk elemen .box */
+            width: 400px; /* Lebar elemen .box */
+            height: 400px; /* Tinggi elemen .box */
+            border: 2px solid rgb(0, 0, 0); /* Border elemen .box */
+            overflow: hidden; /*  overflow untuk .box */
+        }
+        .text {
+            font-size: 15rem; /* Ukuran font besar pada elemen .text */
+            position: absolute; /*  posisi absolut untuk elemen .text */
+            width: 100vw; /* Lebar elemen .text sebesar lebar viewport */
+            z-index: -1; /* tempat .text di bawah elemen lain */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <p class="text" id="text">jangan pernah semangat, tetaplah menyerah !!</p> 
+    <script src="script.js"></script>
+</body>
+</html>
